@@ -32,18 +32,17 @@ int main()
 	 switch(k)
 	 {
 	 	case '+':
-	 		printf(" %d %c %d = %d\n", v1, k, v2, v1+v2);  //v1 + v2 = x
-	 		break;
+	 		printf(" %d %c %d = %d\n", v1, k, v2, v1+v2); break;
 	    case '-':
-	 		printf(" %d %c %d = %d\n", v1, k, v2, v1-v2);  //v1 - v2 = x
-	 		break;
+	 		printf(" %d %c %d = %d\n", v1, k, v2, v1-v2); break;
 	 	case '*':
-	 		printf(" %d %c %d = %d\n", v1, k, v2, v1*v2);  //v1 * v2 = x
-	 		break;
+	 		printf(" %d %c %d = %d\n", v1, k, v2, v1*v2); break;
 	 	case '/':
-	 		printf(" %d %c %d = %f\n", v1, k, v2, (double)v1/(double)v2);  //v1 / v2 = x
-	 		break;
-	 		default: break;
-	 }
+	 		printf(" %d %c %d = %f\n", v1, k, v2, (double)v1/(double)v2);
+			break;
+	 		default: k=3; break; //다른 키 입력은 종료 
+	    }
+        if(k ==3) break;
     }
+
 }
